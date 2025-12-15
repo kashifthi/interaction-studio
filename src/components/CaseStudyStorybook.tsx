@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChevronLeft, ChevronRight, Target, Users, Lightbulb, Palette, TrendingUp } from "lucide-react";
+import { ChevronLeft, ChevronRight, Target, Users, Lightbulb, Palette, TrendingUp, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface CaseStudyPage {
@@ -486,15 +486,29 @@ export function CaseStudyStorybook() {
               ))}
             </div>
 
-            <Button
-              variant={currentPage === totalPages - 1 ? "default" : "outline"}
-              onClick={goToNext}
-              disabled={currentPage === totalPages - 1}
-              className="gap-2"
-            >
-              {currentPage === totalPages - 1 ? "Complete" : "Next"}
-              {currentPage < totalPages - 1 && <ChevronRight className="h-4 w-4" />}
-            </Button>
+            <div className="flex gap-2">
+              {currentPage === totalPages - 1 && (
+                <Button
+                  variant="outline"
+                  className="gap-2"
+                  asChild
+                >
+                  <a href="/case-study-full.pdf" download>
+                    <Download className="h-4 w-4" />
+                    Download
+                  </a>
+                </Button>
+              )}
+              <Button
+                variant={currentPage === totalPages - 1 ? "default" : "outline"}
+                onClick={goToNext}
+                disabled={currentPage === totalPages - 1}
+                className="gap-2"
+              >
+                {currentPage === totalPages - 1 ? "Complete" : "Next"}
+                {currentPage < totalPages - 1 && <ChevronRight className="h-4 w-4" />}
+              </Button>
+            </div>
           </div>
         </div>
       </div>
