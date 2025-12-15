@@ -1,12 +1,16 @@
 import { useState, useRef, useEffect } from "react";
-import { Play, Pause, RotateCcw, Volume2 } from "lucide-react";
+import { Play, Pause, RotateCcw, Volume2, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Switch } from "@/components/ui/switch";
+import { Label } from "@/components/ui/label";
 
 interface AudioPlayerProps {
   text: string;
+  visualMode: boolean;
+  onVisualModeChange: (value: boolean) => void;
 }
 
-export function AudioPlayer({ text }: AudioPlayerProps) {
+export function AudioPlayer({ text, visualMode, onVisualModeChange }: AudioPlayerProps) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
   const [speed, setSpeed] = useState(1);
@@ -164,6 +168,18 @@ export function AudioPlayer({ text }: AudioPlayerProps) {
           <span className="text-xs text-muted-foreground">
             {isPlaying ? "Playing..." : isPaused ? "Paused" : "Ready"}
           </span>
+
+          <div className="flex items-center gap-2 ml-auto border-l border-border pl-4">
+            <Eye className="h-4 w-4 text-primary" />
+            <Label htmlFor="visual-mode" className="text-sm font-medium cursor-pointer">
+              Visual View
+            </Label>
+            <Switch
+              id="visual-mode"
+              checked={visualMode}
+              onCheckedChange={onVisualModeChange}
+            />
+          </div>
         </div>
       </div>
     </div>
