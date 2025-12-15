@@ -1,70 +1,60 @@
-import { Briefcase, GraduationCap, Award, Code, Users, FileText } from "lucide-react";
+import { Briefcase, GraduationCap, Award, Code, Palette, Wrench, Languages, FileText } from "lucide-react";
 
 export const resumeTextContent = `
-Kashif Iqbal - UX Researcher and PhD Candidate.
+Kashif Iqbal - UX Designer.
 
 Summary:
-A dedicated UX researcher with over 5 years of experience in human-computer interaction research. 
-Passionate about creating inclusive and accessible digital experiences through rigorous user research 
-and evidence-based design practices.
+UX/UI Designer based in Ingolstadt, Germany with extensive experience in creating user-friendly interfaces 
+and leading design initiatives for mobile apps, SaaS platforms, and web applications.
 
 Experience:
 
-Graduate Research Assistant at University of Technology, from 2020 to Present.
-Conducting mixed-methods research on accessibility in emerging technologies.
-Led 15 user studies with over 200 participants across diverse demographics.
-Published 8 peer-reviewed papers in top-tier HCI conferences including CHI and UIST.
-Mentored 10 undergraduate students in research methodologies.
+UX/UI Designer (Werkstudent) at STIKKY // Nine37 Innovation GmbH, from October 2023 to Present.
+Lead UX/UI design initiatives for Stikky, enabling Shopify merchants to turn their Shopify store into a mobile app.
+Create user-friendly interfaces for the Shopify backend using Polaris design system.
+Empowering merchants to design and customize their mobile apps through intuitive drag-and-drop functionality.
+Collaborate with engineers to ensure implementability of design.
+Iterate on designs based on user feedback using Hotjar and Firebase.
 
-UX Research Intern at Tech Innovation Labs, from 2019 to 2020.
-Conducted usability testing and heuristic evaluations for mobile applications.
-Synthesized research findings into actionable design recommendations.
-Collaborated with cross-functional teams to implement user-centered improvements.
-Increased task completion rates by 35% through iterative design improvements.
+UX/UI Designer at vFairs, from November 2021 to September 2023.
+Worked with vFairs' Internal CMS tool to implement approved design mock-ups and elements.
+Prioritized delivering exceptional user experiences and troubleshooting UX issues.
+Ensured compliance with style standards and WCAG guidelines.
+Recognized as Top Rated Event Designer of the year in 2022.
 
-Research Assistant at Digital Experience Lab, from 2018 to 2019.
-Assisted in conducting user interviews and contextual inquiries.
-Analyzed qualitative data using thematic analysis methods.
-Contributed to grant proposals totaling over $500,000 in funding.
+UX/UI Designer at Blonk Group, from September 2020 to November 2021.
+Served as a design generalist at Blonk, an HR technology startup.
+Conceptualized and redesigned the Blonk iOS/Android app.
+Led redesign efforts for SoBlonk AI based Recruiting SaaS Platform.
+Achieved 66% improvement in user onboarding.
+Key role in designing and maintaining the overall design system.
+
+UX/UI Designer at Aykays, from June 2019 to September 2020.
+Designed, prototyped, and implemented Bootstrap and CMS based sites.
+Worked with WordPress, Webflow, and Shopify platforms.
 
 Education:
 
-PhD in Human-Computer Interaction, University of Technology, Expected 2025.
-Dissertation: "Designing Inclusive Interfaces for Aging Populations"
-GPA: 3.9 out of 4.0
-
-Master of Science in Computer Science, State University, 2019.
-Thesis: "Accessibility Patterns in Mobile Application Design"
-Graduated with Honors
-
-Bachelor of Science in Information Systems, National University, 2017.
-Minor in Psychology
-Dean's List all semesters
+Master of Science in User Experience Design and Research at Technische Hochschule Ingolstadt, Germany. In progress since 2024.
 
 Skills:
 
-Research Methods: Usability Testing, A/B Testing, Card Sorting, Contextual Inquiry, 
-Surveys, Interviews, Focus Groups, Diary Studies, Eye Tracking.
+Design: UX strategy, User flows, Concept sketches, Experience mapping, Wireframes, Prototypes, Mockups, Design systems.
+Research: User interviews, Usability testing, Persona hypothesis, Competitor analysis.
+Technical: HTML5, CSS3.
+Tools: Figma, Miro, Adobe Suite, Hotjar, MS Clarity.
+Product Management: Jira, Planning Poker, Google Docs.
+Languages: German A1, English Fluent, Hindi/Urdu Fluent.
 
-Analysis: Thematic Analysis, Statistical Analysis, SPSS, R, Python, NVivo.
-
-Design Tools: Figma, Sketch, Adobe XD, InVision, Miro, Axure.
-
-Technical: HTML, CSS, JavaScript, React, Python, SQL.
-
-Publications:
-
-"Designing Voice Interfaces for Older Adults" - CHI 2024
-"Accessibility Challenges in Fintech Applications" - ASSETS 2023
-"Understanding Mobile Usage Patterns Among Seniors" - MobileHCI 2023
-"Inclusive Design Patterns for E-commerce" - DIS 2022
+Certifications:
+Google UX Design Certificate.
+IBM Enterprise Design Thinking Practitioner.
+IBM Enterprise Design Thinking Co-Creator.
+UI/UX Design Specialization from Coursera.
+McKinsey Forward Program.
 
 Awards:
-
-Best Paper Award - CHI 2024 Accessibility Track
-NSF Graduate Research Fellowship - 2021
-Outstanding Graduate Student Award - 2023
-ACM SIGCHI Student Research Competition Winner - 2022
+Top Rated Event Design Award at vFairs, December 2022.
 `;
 
 export function ResumeContent() {
@@ -73,10 +63,10 @@ export function ResumeContent() {
       {/* Header */}
       <header className="text-center space-y-4">
         <h1 className="text-4xl font-bold text-foreground">Kashif Iqbal</h1>
-        <p className="text-xl text-primary font-medium">UX Researcher & PhD Candidate</p>
+        <p className="text-xl text-primary font-medium">UX Designer</p>
         <p className="text-muted-foreground max-w-2xl mx-auto">
-          A dedicated UX researcher with over 5 years of experience in human-computer interaction research. 
-          Passionate about creating inclusive and accessible digital experiences.
+          UX/UI Designer based in Ingolstadt, Germany with extensive experience in creating user-friendly interfaces 
+          and leading design initiatives for mobile apps, SaaS platforms, and web applications.
         </p>
       </header>
 
@@ -92,35 +82,45 @@ export function ResumeContent() {
         <div className="space-y-6 pl-4 border-l-2 border-border ml-4">
           <article className="relative pl-6">
             <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-primary" />
-            <h3 className="font-semibold text-lg text-foreground">Graduate Research Assistant</h3>
-            <p className="text-primary font-medium">University of Technology • 2020 - Present</p>
+            <h3 className="font-semibold text-lg text-foreground">UX/UI Designer (Werkstudent)</h3>
+            <p className="text-primary font-medium">STIKKY // Nine37 Innovation GmbH • Oct 2023 - Present</p>
             <ul className="mt-2 text-muted-foreground space-y-1 list-disc list-inside">
-              <li>Conducting mixed-methods research on accessibility in emerging technologies</li>
-              <li>Led 15+ user studies with 200+ participants across diverse demographics</li>
-              <li>Published 8 peer-reviewed papers in top-tier HCI conferences</li>
-              <li>Mentored 10 undergraduate students in research methodologies</li>
+              <li>Lead UX/UI design initiatives for Stikky, enabling Shopify merchants to create mobile apps</li>
+              <li>Create user-friendly interfaces using Polaris design system with drag-and-drop functionality</li>
+              <li>Collaborate with engineers to ensure design implementability</li>
+              <li>Iterate on designs based on user feedback using Hotjar & Firebase</li>
             </ul>
           </article>
 
           <article className="relative pl-6">
             <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-accent" />
-            <h3 className="font-semibold text-lg text-foreground">UX Research Intern</h3>
-            <p className="text-primary font-medium">Tech Innovation Labs • 2019 - 2020</p>
+            <h3 className="font-semibold text-lg text-foreground">UX/UI Designer</h3>
+            <p className="text-primary font-medium">vFairs • Nov 2021 - Sep 2023</p>
             <ul className="mt-2 text-muted-foreground space-y-1 list-disc list-inside">
-              <li>Conducted usability testing and heuristic evaluations</li>
-              <li>Synthesized findings into actionable design recommendations</li>
-              <li>Increased task completion rates by 35%</li>
+              <li>Implemented design mock-ups using vFairs' Internal CMS tool</li>
+              <li>Prioritized exceptional user experiences and WCAG compliance</li>
+              <li>Recognized as Top Rated Event Designer of the year in 2022</li>
+            </ul>
+          </article>
+
+          <article className="relative pl-6">
+            <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-accent" />
+            <h3 className="font-semibold text-lg text-foreground">UX/UI Designer</h3>
+            <p className="text-primary font-medium">Blonk Group • Sep 2020 - Nov 2021</p>
+            <ul className="mt-2 text-muted-foreground space-y-1 list-disc list-inside">
+              <li>Conceptualized and redesigned Blonk iOS/Android app</li>
+              <li>Led SoBlonk redesign achieving 66% improvement in user onboarding</li>
+              <li>Designed and maintained the overall design system</li>
             </ul>
           </article>
 
           <article className="relative pl-6">
             <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-muted-foreground" />
-            <h3 className="font-semibold text-lg text-foreground">Research Assistant</h3>
-            <p className="text-primary font-medium">Digital Experience Lab • 2018 - 2019</p>
+            <h3 className="font-semibold text-lg text-foreground">UX/UI Designer</h3>
+            <p className="text-primary font-medium">Aykays • Jun 2019 - Sep 2020</p>
             <ul className="mt-2 text-muted-foreground space-y-1 list-disc list-inside">
-              <li>Assisted in conducting user interviews and contextual inquiries</li>
-              <li>Analyzed qualitative data using thematic analysis</li>
-              <li>Contributed to grant proposals totaling $500,000+</li>
+              <li>Designed and prototyped Bootstrap & CMS based sites</li>
+              <li>Worked with WordPress, Webflow, and Shopify platforms</li>
             </ul>
           </article>
         </div>
@@ -135,32 +135,11 @@ export function ResumeContent() {
           <h2 className="text-2xl font-semibold text-foreground">Education</h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-1 gap-6">
           <article className="p-6 rounded-xl bg-card border border-border card-shadow">
-            <h3 className="font-semibold text-foreground">PhD in HCI</h3>
-            <p className="text-sm text-primary">University of Technology</p>
-            <p className="text-sm text-muted-foreground">Expected 2025</p>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Dissertation: "Designing Inclusive Interfaces for Aging Populations"
-            </p>
-          </article>
-
-          <article className="p-6 rounded-xl bg-card border border-border card-shadow">
-            <h3 className="font-semibold text-foreground">M.S. Computer Science</h3>
-            <p className="text-sm text-primary">State University</p>
-            <p className="text-sm text-muted-foreground">2019 • Honors</p>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Thesis: "Accessibility Patterns in Mobile Application Design"
-            </p>
-          </article>
-
-          <article className="p-6 rounded-xl bg-card border border-border card-shadow">
-            <h3 className="font-semibold text-foreground">B.S. Information Systems</h3>
-            <p className="text-sm text-primary">National University</p>
-            <p className="text-sm text-muted-foreground">2017</p>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Minor in Psychology • Dean's List
-            </p>
+            <h3 className="font-semibold text-foreground">M.Sc. User Experience Design and Research</h3>
+            <p className="text-sm text-primary">Technische Hochschule Ingolstadt</p>
+            <p className="text-sm text-muted-foreground">2024 - In Progress • Ingolstadt, Germany</p>
           </article>
         </div>
       </section>
@@ -174,14 +153,14 @@ export function ResumeContent() {
           <h2 className="text-2xl font-semibold text-foreground">Skills</h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="space-y-3">
             <h3 className="font-medium text-foreground flex items-center gap-2">
-              <Users className="h-4 w-4 text-primary" />
-              Research Methods
+              <Palette className="h-4 w-4 text-primary" />
+              Design
             </h3>
             <div className="flex flex-wrap gap-2">
-              {["Usability Testing", "A/B Testing", "Interviews", "Surveys", "Eye Tracking"].map((skill) => (
+              {["UX Strategy", "User Flows", "Wireframes", "Prototypes", "Mockups", "Design Systems"].map((skill) => (
                 <span key={skill} className="px-3 py-1 text-sm rounded-full bg-secondary text-secondary-foreground">
                   {skill}
                 </span>
@@ -190,9 +169,9 @@ export function ResumeContent() {
           </div>
 
           <div className="space-y-3">
-            <h3 className="font-medium text-foreground">Analysis</h3>
+            <h3 className="font-medium text-foreground">Research</h3>
             <div className="flex flex-wrap gap-2">
-              {["SPSS", "R", "Python", "NVivo", "Thematic Analysis"].map((skill) => (
+              {["User Interviews", "Usability Testing", "Persona Hypothesis", "Competitor Analysis"].map((skill) => (
                 <span key={skill} className="px-3 py-1 text-sm rounded-full bg-secondary text-secondary-foreground">
                   {skill}
                 </span>
@@ -201,9 +180,12 @@ export function ResumeContent() {
           </div>
 
           <div className="space-y-3">
-            <h3 className="font-medium text-foreground">Design Tools</h3>
+            <h3 className="font-medium text-foreground flex items-center gap-2">
+              <Wrench className="h-4 w-4 text-primary" />
+              Tools
+            </h3>
             <div className="flex flex-wrap gap-2">
-              {["Figma", "Sketch", "Adobe XD", "Miro", "Axure"].map((skill) => (
+              {["Figma", "Miro", "Adobe Suite", "Hotjar", "MS Clarity", "Jira"].map((skill) => (
                 <span key={skill} className="px-3 py-1 text-sm rounded-full bg-secondary text-secondary-foreground">
                   {skill}
                 </span>
@@ -214,7 +196,21 @@ export function ResumeContent() {
           <div className="space-y-3">
             <h3 className="font-medium text-foreground">Technical</h3>
             <div className="flex flex-wrap gap-2">
-              {["React", "JavaScript", "Python", "SQL", "HTML/CSS"].map((skill) => (
+              {["HTML5", "CSS3", "WordPress", "Webflow", "Shopify"].map((skill) => (
+                <span key={skill} className="px-3 py-1 text-sm rounded-full bg-secondary text-secondary-foreground">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="space-y-3">
+            <h3 className="font-medium text-foreground flex items-center gap-2">
+              <Languages className="h-4 w-4 text-primary" />
+              Languages
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {["English (Fluent)", "German (A1)", "Hindi/Urdu (Fluent)"].map((skill) => (
                 <span key={skill} className="px-3 py-1 text-sm rounded-full bg-secondary text-secondary-foreground">
                   {skill}
                 </span>
@@ -224,25 +220,26 @@ export function ResumeContent() {
         </div>
       </section>
 
-      {/* Publications */}
+      {/* Certifications */}
       <section className="space-y-6">
         <div className="flex items-center gap-3">
           <div className="p-2 rounded-lg bg-primary/10">
             <FileText className="h-5 w-5 text-primary" />
           </div>
-          <h2 className="text-2xl font-semibold text-foreground">Selected Publications</h2>
+          <h2 className="text-2xl font-semibold text-foreground">Certifications</h2>
         </div>
 
         <div className="grid sm:grid-cols-2 gap-4">
           {[
-            { title: "Designing Voice Interfaces for Older Adults", venue: "CHI 2024" },
-            { title: "Accessibility Challenges in Fintech Applications", venue: "ASSETS 2023" },
-            { title: "Understanding Mobile Usage Patterns Among Seniors", venue: "MobileHCI 2023" },
-            { title: "Inclusive Design Patterns for E-commerce", venue: "DIS 2022" },
-          ].map((pub) => (
-            <article key={pub.title} className="p-4 rounded-lg bg-card border border-border hover:card-shadow-hover transition-shadow">
-              <h3 className="font-medium text-foreground">{pub.title}</h3>
-              <p className="text-sm text-primary mt-1">{pub.venue}</p>
+            { title: "Google UX Design Certificate", org: "Google" },
+            { title: "Enterprise Design Thinking Practitioner", org: "IBM" },
+            { title: "Enterprise Design Thinking Co-Creator", org: "IBM" },
+            { title: "UI/UX Design Specialization", org: "Coursera" },
+            { title: "McKinsey Forward Program", org: "McKinsey & Company" },
+          ].map((cert) => (
+            <article key={cert.title} className="p-4 rounded-lg bg-card border border-border hover:card-shadow-hover transition-shadow">
+              <h3 className="font-medium text-foreground">{cert.title}</h3>
+              <p className="text-sm text-primary mt-1">{cert.org}</p>
             </article>
           ))}
         </div>
@@ -258,17 +255,10 @@ export function ResumeContent() {
         </div>
 
         <div className="flex flex-wrap gap-4">
-          {[
-            "Best Paper Award - CHI 2024",
-            "NSF Graduate Research Fellowship",
-            "Outstanding Graduate Student 2023",
-            "ACM SIGCHI Student Competition Winner",
-          ].map((award) => (
-            <div key={award} className="flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20">
-              <Award className="h-4 w-4 text-accent" />
-              <span className="text-sm font-medium text-foreground">{award}</span>
-            </div>
-          ))}
+          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20">
+            <Award className="h-4 w-4 text-accent" />
+            <span className="text-sm font-medium text-foreground">Top Rated Event Design Award - vFairs 2022</span>
+          </div>
         </div>
       </section>
     </div>
