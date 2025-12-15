@@ -1,6 +1,7 @@
 import { Download, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import kashifPhoto from "@/assets/kashif-photo.png";
 
 export function HeroSection() {
   return (
@@ -14,8 +15,8 @@ export function HeroSection() {
                 UX Researcher & PhD Candidate
               </p>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-foreground opacity-0 animate-fade-up stagger-2">
-                Designing the{" "}
-                <span className="text-gradient">Future</span> of Interaction
+                I'm Kashif Iqbal -{" "}
+                <span className="text-gradient">UX Designer</span>
               </h1>
               <p className="text-lg sm:text-xl text-muted-foreground max-w-xl opacity-0 animate-fade-up stagger-3">
                 Specializing in Human-Computer Interaction, bridging the gap between 
@@ -78,8 +79,8 @@ export function HeroSection() {
               {/* Main image container */}
               <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden card-shadow border border-border bg-card">
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop"
-                  alt="Professional portrait of a confident researcher in modern academic setting"
+                  src={kashifPhoto}
+                  alt="Kashif Iqbal - UX Designer"
                   className="w-full h-full object-cover"
                 />
                 {/* Gradient overlay */}
